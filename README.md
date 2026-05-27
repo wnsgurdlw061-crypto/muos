@@ -1,7 +1,8 @@
 # 無 OS v2.0 — Kali + Parrot + AI Custom Linux
 
-> **Status: Not yet perfect** ⚠️
+> **Status: Not yet perfect — I'm not sure if this is actually possible** ⚠️
 > This project is still under development. Bugs may exist and features may change.
+> I'm experimenting with what's possible. No guarantees this will all work.
 
 A custom Linux distribution combining Kali Linux penetration testing tools, Parrot OS privacy features, and Mu OS's custom AI/automation toolkit.
 
