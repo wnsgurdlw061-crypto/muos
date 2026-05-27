@@ -1,5 +1,9 @@
 # 無 OS v2.0 — Kali + Parrot + AI Custom Linux
 
+> **Status: 아직 완벽하지 않음 — Not yet perfect** ⚠️
+> 아직 개발 중인 프로젝트입니다. 버그가 있을 수 있으며, 기능이 변경될 수 있습니다.
+> This project is still under development. Bugs may exist and features may change.
+
 Kali Linux의 침투 테스트 도구, Parrot OS의 개인정보 보호 기능, 그리고 無 OS만의 커스텀 AI/자동화 도구를 결합한 맞춤형 Linux 배포판입니다.
 
 **"無" (Mu)** — 그림자처럼, 凡적痕을 남기지 않는 보안 OS
