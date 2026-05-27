@@ -1,0 +1,7 @@
+FROM archlinux:base AS builder
+RUN pacman -Syu --noconfirm && pacman -S --noconfirm archiso squashfs-tools xorriso grub syslinux git && pacman -Scc --noconfirm
+WORKDIR /workspace
+COPY build-arch.sh profiles/ scripts/ rootfs-overlay/ config/ /workspace/
+RUN chmod +x /workspace/build-arch.sh /workspace/scripts/*.sh
+ENV OUTPUT_DIR=/workspace/output
+CMD ["/workspace/build-arch.sh"]

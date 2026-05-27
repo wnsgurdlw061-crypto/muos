@@ -1,0 +1,17 @@
+#!/bin/bash
+set -e
+echo "  __  __        _____ _____   ___   ____  "
+echo " |  \/  |      / ____| ____| / _ \ / ___|"
+echo " | \  / |_   _| (___ |  _|  | | | |\___ \\"
+echo " | |\/| | | | |\___ \| |___ | |_| | ___) |"
+echo " |_|  |_|\__,_|_____|_____| \___/ |____/ "
+echo ""
+echo "  MuOS (無 OS) v2.0 — Build System"
+echo "  Kali + Parrot + AI Custom Linux"
+echo ""
+echo "Usage: sudo ./build.sh [1|2|ci|clean|help]"
+echo "  1      Arch Linux build (default)"
+echo "  2      Debian Bookworm build (legacy)"
+echo "  ci     CI mode with caching"
+echo "  clean  Clean build artifacts"
+echo "  help   Show help"

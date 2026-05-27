@@ -1,0 +1,9 @@
+base base-devel linux linux-firmware linux-headers grub efibootmgr sudo vim nano
+xorg-server xfce4-session xfce4-panel xfce4-terminal lightdm lightdm-gtk-greeter
+noto-fonts noto-fonts-cjk ibus ibus-hangul
+nmap wireshark-qt tcpdump hydra sqlmap nikto hashcat john aircrack-ng
+tor torsocks proxychains-ng macchanger
+ufw fail2ban apparmor lynis rkhunter clamav audit wireguard-tools openvpn
+git python python-pip go nodejs npm docker docker-compose
+zsh fzf ripgrep fd bat htop btop tmux screen
+squashfs-tools xorriso

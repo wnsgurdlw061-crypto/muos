@@ -1,0 +1,24 @@
+name: MuOS Build
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Shellcheck
+        run: sudo apt-get install -y shellcheck && find scripts/ -name "*.sh" -exec shellcheck -s bash -e SC1091 {} \; || true
+  build:
+    runs-on: ubuntu-latest
+    needs: lint
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build ISO
+        run: |
+          mkdir -p output
+          docker build -t mu-os-builder -f Dockerfile.arch .
+          docker run --privileged -v ${{ github.workspace }}/output:/workspace/output mu-os-builder
+      - name: Upload ISO
+        uses: actions/upload-artifact@v4
+        with:
+          name: muos-iso
+          path: output/*.iso
